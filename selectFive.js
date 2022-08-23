@@ -2,6 +2,9 @@ const selectedPlayer = [];
 
 let playerCount = 0;
 
+
+
+
 function displayPlayerName(player) {
     const selectedPlayerName = document.getElementById('selected-player')
     selectedPlayerName.innerHTML = '';
@@ -17,12 +20,21 @@ function displayPlayerName(player) {
             tr.innerHTML = `
             <td>${i + 1}</td>
             <td> ${playerName}</td>
-    
+            `
             selectedPlayerName.appendChild(tr)
+
+
         }
-    
+
+
+
     }
+
     playerCount++
+
+
+
+
 }
 
 function addToSelectArea(Element) {
@@ -36,5 +48,11 @@ function addToSelectArea(Element) {
     } else {
         document.getElementById('selected-number').innerText = selectedPlayer.length;
     }
+
+
+
     displayPlayerName(selectedPlayer)
+
+
+
 }
