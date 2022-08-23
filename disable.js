@@ -7,6 +7,8 @@ function disabledButton(event, elementId) {
         disableButton.style.color = 'white'
     }
 }
+
+// button name added
 document.getElementById('btn-kylian').addEventListener('click', function(event) {
     disabledButton(event, 'btn-kylian');
 })
