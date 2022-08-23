@@ -1,3 +1,4 @@
+// calculation option added
 document.getElementById('btn-calculate').addEventListener('click', function() {
     const perPlayerField = document.getElementById('per-player');
     const perPlayerAmountString = perPlayerField.value;
