@@ -17,9 +17,10 @@ function displayPlayerName(player) {
             tr.innerHTML = `
             <td>${i + 1}</td>
             <td> ${playerName}</td>
-            `
+    
             selectedPlayerName.appendChild(tr)
         }
+    
     }
     playerCount++
 }
