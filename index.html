@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Football Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css
+" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com
+"></script>
+</head>
+
+<body class="bg-black">.
+    <header class=" py-28 sm:w-screen md:w-screen lg:w-screen">
+        <div>
+            <h1 class="text-6xl text-white font-bold text-center">Best Football Player In The World</h1>
+            <h2 class="text-4xl text-white text-center">This ranking is based on an algorithm that combines various factors, including the votes of our users and search trends on the internet.</h2>
+        </div>
+
+        <div class="w-9/12 mx-auto mt-5">
+            <img class="mx-auto" src="images/football-cover.JPG" alt="">
+        </div>
+
+    </header>
+    <main>
+        <section class="mt-10 mx-auto">
+            <div>
+                <div class="lg:flex sm:flex-col md:flex-col lg:flex-row">
+                    <!-- player card -->
+
+                    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-20 lg:w-9/12">
+                        <!-- card 1  -->
+                        <div class="bg-black border border-indigo-200">
+                            <div>
+                                <img class="" src="images/Cristiano_Ronaldo.jpg" alt="">
+                            </div>
+                            <div class="text-center">
+                                <h1 class="text-4xl text-white font-semibold pt-5">Cristiano Ronaldo</h1>
+                                <div class="flex justify-center space-x-5 pt-5 pb-5">
+                                    <p class="text-white">31 Match</p>
+                                    <p class="text-white">750 Run</p>
+                                </div>
+                                <button id="btn-ronaldo" class="bg-blue-700 text-xl  text-white px-20 py-2 my-10  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="bg-black border border-indigo-200">
+                            <div>
+                                <img src="images/Zlatan_Ibrahimovic.jpg" alt="">
+                            </div>
+                            <div class="text-center">
+                                <h1 class="text-4xl text-white font-semibold pt-5">Zlatan Ibrahimovic</h1>
+                                <div class="flex justify-center space-x-5 pt-5 pb-5">
+                                    <p class="text-white">30 Match</p>
+                                    <p class="text-white">700 Run</p>
+                                </div>
+                                <button id="btn-ibrahim" class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="
+                                (this)"> Select  </button>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+                        <div class="bg-black border border-indigo-200">
+                            <div>
+                                <img src="images/Lionel_Messi.jpg" alt="">
+                            </div>
+                            <div class="text-center">
+                                <h1 class="text-3xl text-white font-semibold pt-5">Lionel Messi</h1>
+                                <div class="flex justify-center space-x-5 pt-5 pb-5">
+                                    <p class="text-white">30 Match</p>
+                                    <p class="text-white">650 Run</p>
+                                </div>
+                                <button id="btn-messi" class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
+                            </div>
+                        </div>
+                        <!-- card 4  -->
+                        <div class="bg-black border border-indigo-200 ">
+                            <div>
+                                <img src="images/Neymar_jr.jpg" alt="">
+                            </div>
+                            <div class="text-center">
+                                <h1 class="text-4xl text-white font-semibold pt-5">Neymar jr</h1>
+                                <div class="flex justify-center space-x-5 pt-5 pb-5">
+                                    <p class="text-white">31 Match</p>
+                                    <p class="text-white">800 Run</p>
+                                </div>
+                                <button id="btn-neymar" class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
+                            </div>
+                        </div>
+                        <!-- card 5  -->
+                        <div class="bg-black border border-indigo-200">
+                            <div>
+                                <img src="images/Sergo_Ramos.jpg" alt="">
+                            </div>
+                            <div class="text-center">
+                                <h1 class="text-4xl text-white font-semibold pt-5">Sergo Ramos</h1>
+                                <div class="flex justify-center space-x-5 pt-5 pb-5">
+                                    <p class="text-white">25 Match</p>
+                                    <p class="text-white">750 Run</p>
+                                </div>
+                                <button id="btn-sergo" class="bg-blue-700 text-xl  text-white px-20 py-2 my-10 rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
+                            </div>
+                        </div>
+                        <!-- card 6 -->
+                        <div class="bg-black border border-indigo-200">
+                            <div>
+                                <img src="images/Kylian_Mbappe.jpg" alt="">
+                            </div>
+                            <div class="text-center">
+                                <h1 class="text-4xl text-white font-semibold pt-5">Kylian Mbappe</h1>
+                                <div class="flex justify-center space-x-5 pt-5 pb-5">
+                                    <p class="text-white">31 Match</p>
+                                    <p class="text-white">650 Run</p>
+                                </div>
+                                <button id="btn-kylian" class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:flex lg:flex-col mt-10 sm:w-screen md:w-screen lg:w-6/12">
+
+                        <!-- selected five area -->
+
+                        <div class=" mx-20 bg-black   px-2 py-10 border border-indigo-200 ">
+                            <h1 class="text-4xl text-white font-semibold text-center underline">Selected-V</h1>
+                            <br>
+                            <div class="overflow-x-auto">
+                                <table class="table w-full">
+                                    <!-- head -->
+                                    <tbody id="selected-player">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!--  budget area  -->
+                        <div class="mx-20 bg-black mt-10  px-5 py-10 border border-indigo-200">
+                            <h1 id="total-player" class="text-4xl text-white text-center font-semibold underline">Budget</h1>
+                            <br>
+
+                            <!-- per player  -->
+
+                            <div class="mt-5">
+                                <p class="text-white text-2xl ">Per Player : <input id="per-player" class="w-9/12 text-black  " type="text" value="">
+                            </div>
+                            <!-- calculate button  -->
+
+                            <div class="flex justify-center"><button id="btn-calculate" class="bg-blue-700 text-xl  text-white sm:px-16 sm:py-2 md:px-20 md:py-2 lg:px-20 lg:py-2 mt-5 rounded-xl block " type="submit"> Calculate  </button></div>
+
+                            <!-- player expences  -->
+                            <label class="inline text-white text-2xl text-center font-bold md:text-left mb-1 md:mb-0 pr-4" for="inline-full-name">Player Expences : <span id="player-expences"> </span> </label>
+
+                            <!-- coach section  -->
+                            <div class="mt-5">
+                                <p class="text-white text-2xl ">Coach : <input id="coach" class="w-9/12 text-black  " type="text" value="">
+                            </div>
+                            <!-- Manager Section  -->
+
+                            <div class="mt-5">
+                                <p class="text-white text-2xl ">Manager : <input id="manager" class="w-9/12 text-black  " type="text" value=""></p>
+
+                            </div>
+                            <!-- calculate total button  -->
+
+                            <div id="calculate-total" class="flex justify-center"><button class="bg-blue-700 text-xl  text-white px-12 py-2 mt-5 rounded-xl block " type="submit"> Calculate Total  </button></div>
+
+                            <!-- total field  -->
+
+                            <label class="inline text-white text-2xl text-center font-bold md:text-left mb-1 md:mb-0 pr-4 " for="inline-full-name">Total : <span id="total-amount"> </span> </label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-28 ">
+        <p class="text-white text-center">Copyright @ 2022 Shila Islam Sia</p>
+    </footer>
+    <script src="script/selective5.js"></script>
+    <script src="script/disable.js"></script>
+
+    <script src="script/calculate.js"></script>
+</body>
+
+</html>
