@@ -41,6 +41,8 @@ function addToSelectArea(Element) {
     const addedPlayer = Element.parentNode.children[0].innerText
     selectedPlayer.push(addedPlayer);
 
+    // alert function added
+
     if (selectedPlayer.length >= 6) {
         alert('you can not add player anymore')
         return;
