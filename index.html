@@ -5,170 +5,168 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Football Player</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css
-" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com
-"></script>
+    <title>FIFA World Cup</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        .benner-image {
+            height: 300px;
+        }
+        
+        .player-image {
+            height: 250px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
-<body class="bg-black">.
-    <header class=" py-28 sm:w-screen md:w-screen lg:w-screen">
-        <div>
-            <h1 class="text-6xl text-white font-bold text-center">Best Football Player In The World</h1>
-            <h2 class="text-4xl text-white text-center">This ranking is based on an algorithm that combines various factors, including the votes of our users and search trends on the internet.</h2>
-        </div>
 
-        <div class="w-9/12 mx-auto mt-5">
-            <img class="mx-auto" src="images/football-cover.JPG" alt="">
-        </div>
 
+<body class="bg-dark">
+
+    <!-- header part  -->
+    <header>
+        <div class="container-fluid benner-main">
+            <div class="row benner-main">
+                <div class="col-3">
+                    <div class="ambappe-image">
+                        <img class="benner-image " src="image/ambappe-benner.png" alt="" class="">
+                    </div>
+                </div>
+                <div class="col-6 text-center  benner-title">
+                    <h1 class="text-danger">FIFA World Cup </h1>
+                    <p class="fs-6 text-white">The FIFA World Cup, often simply called the World Cup, is an international association football competition contested by the senior men's national teams of the members of the Fédération Internationale de Football Association (FIFA),
+                        the sport's global governing body.</p>
+                </div>
+                <div class="col-3">
+
+                </div>
+            </div>
+        </div>
     </header>
-    <main>
-        <section class="mt-10 mx-auto">
-            <div>
-                <div class="lg:flex sm:flex-col md:flex-col lg:flex-row">
-                    <!-- player card -->
 
-                    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-20 lg:w-9/12">
-                        <!-- card 1  -->
-                        <div class="bg-black border border-indigo-200">
-                            <div>
-                                <img class="" src="images/Cristiano_Ronaldo.jpg" alt="">
-                            </div>
-                            <div class="text-center">
-                                <h1 class="text-4xl text-white font-semibold pt-5">Cristiano Ronaldo</h1>
-                                <div class="flex justify-center space-x-5 pt-5 pb-5">
-                                    <p class="text-white">31 Match</p>
-                                    <p class="text-white">750 Run</p>
+    <!--end header -->
+
+    <main>
+
+        <!-- player section -->
+        <section id="player-section">
+            <div class="container m-auto row row-cols-1 row-cols-md-3">
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-4 mb-4">
+                            <div class="card bg-dark border border-white text-white">
+                                <img class="player-image" src="image/messi.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center padding">
+                                    <h5 class="player-name fs-4">Lionel Messi</h5>
+                                    <div class="player-experiance">
+                                        <p class="fs-5">34 Goals<span class="goal-assist-space mx-3">-</span> 140-Assist</p>
+                                    </div>
+                                    <button class="btn Select-btn bg-primary text-white w-75">Select</button>
                                 </div>
-                                <button id="btn-ronaldo" class="bg-blue-700 text-xl  text-white px-20 py-2 my-10  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                             </div>
                         </div>
-                        <!-- card 2 -->
-                        <div class="bg-black border border-indigo-200">
-                            <div>
-                                <img src="images/Zlatan_Ibrahimovic.jpg" alt="">
-                            </div>
-                            <div class="text-center">
-                                <h1 class="text-4xl text-white font-semibold pt-5">Zlatan Ibrahimovic</h1>
-                                <div class="flex justify-center space-x-5 pt-5 pb-5">
-                                    <p class="text-white">30 Match</p>
-                                    <p class="text-white">700 Run</p>
+                        <div class="col-4 mb-4">
+                            <div class="card bg-dark border border-white text-white">
+                                <img class="player-image" src="image/neimar.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="player-name fs-4">Neymar Jr</h5>
+                                    <div class="player-experiance">
+                                        <p class="fs-5">36 Goals<span class="goal-assist-space mx-3">-</span> 123-Assist</p>
+                                    </div>
+                                    <button class="btn Select-btn bg-primary text-white w-75">Select</button>
                                 </div>
-                                <button id="btn-ibrahim" class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="
-                                (this)"> Select  </button>
                             </div>
                         </div>
-                        <!-- card 3 -->
-                        <div class="bg-black border border-indigo-200">
-                            <div>
-                                <img src="images/Lionel_Messi.jpg" alt="">
-                            </div>
-                            <div class="text-center">
-                                <h1 class="text-3xl text-white font-semibold pt-5">Lionel Messi</h1>
-                                <div class="flex justify-center space-x-5 pt-5 pb-5">
-                                    <p class="text-white">30 Match</p>
-                                    <p class="text-white">650 Run</p>
+                        <div class="col-4 mb-4">
+                            <div class="card bg-dark border border-white text-white">
+                                <img class="player-image" src="image/embappe.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center padding">
+                                    <h5 class="player-name fs-4">Kylian Mbappé</h5>
+                                    <div class="player-experiance">
+                                        <p class="fs-5">32 Goals<span class="goal-assist-space mx-3">-</span> 111-Assist</p>
+                                    </div>
+                                    <button class="btn Select-btn bg-primary text-white w-75">Select</button>
                                 </div>
-                                <button id="btn-messi" class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                             </div>
                         </div>
-                        <!-- card 4  -->
-                        <div class="bg-black border border-indigo-200 ">
-                            <div>
-                                <img src="images/Neymar_jr.jpg" alt="">
-                            </div>
-                            <div class="text-center">
-                                <h1 class="text-4xl text-white font-semibold pt-5">Neymar jr</h1>
-                                <div class="flex justify-center space-x-5 pt-5 pb-5">
-                                    <p class="text-white">31 Match</p>
-                                    <p class="text-white">800 Run</p>
+                        <div class="col-4">
+                            <div class="card bg-dark border border-white text-white">
+                                <img class="player-image" src="image/renato.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center padding">
+                                    <h5 class="player-name fs-4">Renato Sanches</h5>
+                                    <div class="player-experiance">
+                                        <p class="fs-5">25 Goals<span class="goal-assist-space mx-3">-</span> 110-Assist</p>
+                                    </div>
+                                    <button class="btn Select-btn bg-primary text-white w-75">Select</button>
                                 </div>
-                                <button id="btn-neymar" class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                             </div>
                         </div>
-                        <!-- card 5  -->
-                        <div class="bg-black border border-indigo-200">
-                            <div>
-                                <img src="images/Sergo_Ramos.jpg" alt="">
-                            </div>
-                            <div class="text-center">
-                                <h1 class="text-4xl text-white font-semibold pt-5">Sergo Ramos</h1>
-                                <div class="flex justify-center space-x-5 pt-5 pb-5">
-                                    <p class="text-white">25 Match</p>
-                                    <p class="text-white">750 Run</p>
+                        <div class="col-4 mb-4">
+                            <div class="card bg-dark border border-white text-white">
+                                <img class="player-image" src="image/sargaous.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center padding">
+                                    <h5 class="player-name fs-4">Sergio Ramos</h5>
+                                    <div class="player-experiance">
+                                        <p class="fs-5">34 Goals<span class="goal-assist-space mx-3">-</span> 120-Assist</p>
+                                    </div>
+                                    <button class="btn Select-btn bg-primary text-white w-75">Select</button>
+
                                 </div>
-                                <button id="btn-sergo" class="bg-blue-700 text-xl  text-white px-20 py-2 my-10 rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                             </div>
                         </div>
-                        <!-- card 6 -->
-                        <div class="bg-black border border-indigo-200">
-                            <div>
-                                <img src="images/Kylian_Mbappe.jpg" alt="">
-                            </div>
-                            <div class="text-center">
-                                <h1 class="text-4xl text-white font-semibold pt-5">Kylian Mbappe</h1>
-                                <div class="flex justify-center space-x-5 pt-5 pb-5">
-                                    <p class="text-white">31 Match</p>
-                                    <p class="text-white">650 Run</p>
+                        <div class="col-4 mb-4">
+                            <div class="card bg-dark border border-white text-white">
+                                <img class="player-image" src="image/vitu.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center padding">
+                                    <h5 class="player-name fs-4">Vítor Machado</h5>
+                                    <div class="player-experiance">
+                                        <p class="fs-5">30 Goals<span class="goal-assist-space mx-3">-</span> 120-Assist</p>
+                                    </div>
+                                    <button class="btn Select-btn bg-primary text-white w-75">Select</button>
                                 </div>
-                                <button id="btn-kylian" class="bg-blue-700 text-xl  text-white px-20 py-2  rounded-xl " type="submit" onclick="addToSelectArea(this)"> Select  </button>
                             </div>
                         </div>
                     </div>
-                    <div class="lg:flex lg:flex-col mt-10 sm:w-screen md:w-screen lg:w-6/12">
+                </div>
+                <!-- end player -->
 
-                        <!-- selected five area -->
+                <!-- start calculate  -->
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-">
+                            <h2 class="select-player-list text-white text-center pt-5">
+                                Selected Player List
+                            </h2>
 
-                        <div class=" mx-20 bg-black   px-2 py-10 border border-indigo-200 ">
-                            <h1 class="text-4xl text-white font-semibold text-center underline">Selected-V</h1>
-                            <br>
-                            <div class="overflow-x-auto">
-                                <table class="table w-full">
-                                    <!-- head -->
-                                    <tbody id="selected-player">
+                            <ol id="list-item">
 
-                                    </tbody>
-                                </table>
-                            </div>
+                            </ol>
                         </div>
+                    </div>
 
-                        <!--  budget area  -->
-                        <div class="mx-20 bg-black mt-10  px-5 py-10 border border-indigo-200">
-                            <h1 id="total-player" class="text-4xl text-white text-center font-semibold underline">Budget</h1>
-                            <br>
-
-                            <!-- per player  -->
-
-                            <div class="mt-5">
-                                <p class="text-white text-2xl ">Per Player : <input id="per-player" class="w-9/12 text-black  " type="text" value="">
+                    <!-- start budget -->
+                    <div class="row">
+                        <div class="clo-">
+                            <div class="text-left">
+                                <h2 class="text-white text-center fs-1">Budget</h2>
+                                <div class="per-player d-flex mt-3">
+                                    <h3 class="text-white d-inline-block text-white">Per Player <input id="player-rate" type="text" class="w-50"></h3>
+                                </div>
+                                <div id="calculate" class="calculate btn w-50 bg-primary text-white mt-3 mb-3">Calculate</div>
+                                <h3 class=text-white>Player Expense : $<span id="player-expense">0</span></h3>
+                                <div class="manager d-flex mt-3">
+                                    <h3 class="text-white d-inline-block text-white">Manager </h3> <input id="manager" type="text" class="w-50">
+                                </div>
+                                <div class="coach d-flex mt-3">
+                                    <h3 class="text-white d-inline-block text-white">Coach </h3>
+                                    <input id="coach" type="text" class="w-50">
+                                </div>
+                                <div id="total-calculate" class="calculate btn w-50 bg-primary text-white mt-3 mb-3">Calculate Total</div>
+                                <p class='text-white fs-1'>Total:$<span id="total-price">0</span></p>
                             </div>
-                            <!-- calculate button  -->
-
-                            <div class="flex justify-center"><button id="btn-calculate" class="bg-blue-700 text-xl  text-white sm:px-16 sm:py-2 md:px-20 md:py-2 lg:px-20 lg:py-2 mt-5 rounded-xl block " type="submit"> Calculate  </button></div>
-
-                            <!-- player expences  -->
-                            <label class="inline text-white text-2xl text-center font-bold md:text-left mb-1 md:mb-0 pr-4" for="inline-full-name">Player Expences : <span id="player-expences"> </span> </label>
-
-                            <!-- coach section  -->
-                            <div class="mt-5">
-                                <p class="text-white text-2xl ">Coach : <input id="coach" class="w-9/12 text-black  " type="text" value="">
-                            </div>
-                            <!-- Manager Section  -->
-
-                            <div class="mt-5">
-                                <p class="text-white text-2xl ">Manager : <input id="manager" class="w-9/12 text-black  " type="text" value=""></p>
-
-                            </div>
-                            <!-- calculate total button  -->
-
-                            <div id="calculate-total" class="flex justify-center"><button class="bg-blue-700 text-xl  text-white px-12 py-2 mt-5 rounded-xl block " type="submit"> Calculate Total  </button></div>
-
-                            <!-- total field  -->
-
-                            <label class="inline text-white text-2xl text-center font-bold md:text-left mb-1 md:mb-0 pr-4 " for="inline-full-name">Total : <span id="total-amount"> </span> </label>
-
                         </div>
                     </div>
                 </div>
@@ -176,13 +174,13 @@
         </section>
     </main>
 
-    <footer class="mt-28 ">
-        <p class="text-white text-center">Copyright @ 2022 Shila Islam Sia</p>
-    </footer>
-    <script src="script/selectFive.js"></script>
-    <script src="script/disable.js"></script>
 
-    <script src="script/calculate.js"></script>
+
+    <!-- js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="calculate.js"></script>
 </body>
 
 </html>
